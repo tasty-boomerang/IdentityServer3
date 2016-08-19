@@ -30,7 +30,7 @@ namespace IdentityServer3.Core.Configuration.Hosting
         readonly IOwinContext context;
         readonly IdentityServerOptions identityServerOptions;
 
-        protected internal SessionCookie(IOwinContext ctx, IdentityServerOptions options)
+        public SessionCookie(IOwinContext ctx, IdentityServerOptions options)
         {
             this.context = ctx;
             this.identityServerOptions = options;
